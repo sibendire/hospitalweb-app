@@ -146,34 +146,34 @@ margin: 0 20px;
     margin-top: 10px;
     line-height: 80px;  
 }
+
 .service{
-    border-radius: 10px;
-    background: #ffffff45;
-    border: solid #dfdfdf95;
-    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:5px;
 }
-.service a{
-    display: inline-block;
+.service-card{
     font-size: 20px;
     font-weight: 800;
-    width: 33%;
-    color: #fff;
+    color: #e70d0d;
     border-right: 1px solid #fff;
     padding: 34px 20px;
-    margin: 0 -2px;
-    height: 180px;
-    vertical-align: top;
+     border-radius: 10px;
+    background: #ffffff45;
+    border: solid #dfdfdf95;
+    margin-top: 100px; 
 }
-.service a:last-child{
+
+.emergency{
     border-right: none;
-    background-image: url(imag/hospital.PNG);
+    background-image: url(imag/emergency\ room.jpg); 
     background-size:cover ;
     background-repeat:no-repeat ;
     background-position: center;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    width: 32.2%;
-}
+    width: 100%
+} 
 .service-content{
     width: calc(100%-47px);
     display: inline-block;
@@ -233,19 +233,29 @@ margin: 0 20px;
     text-transform: uppercase;
 }
 .call-number h3{
-    margin: 0;
-    font-weight: 600;
-    letter-spacing: 1px;
+ font-weight: 600;
+    letter-spacing: 1px; 
 }
 .work{
-    margin-top: -80px;
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:5px;
+}
+
+.schedule{
+    font-size: 20px;
+    font-weight: 800;
+    padding: 30px 20px;
+     border-radius: 10px;
+    background: #ffffff45;
+    border: solid #dfdfdf95;
+    padding-bottom: 20px;
+    
 }
 .hours{
     background: #01ca8b;
     border-radius: 10px;
     padding: 40px 50px;
-    margin-right: 70%;
 }
 .hours h2{
     color: #fff;
@@ -254,7 +264,7 @@ margin: 0 20px;
 }
 .time{
     border-top: 1px solid rgb(255 255 255 / 0.52);
-    padding: 30px 0;
+    padding: 28.7px 0;
 }
 .time:last-child{
     padding-bottom: 0;
@@ -289,13 +299,14 @@ margin: 0 20px;
     overflow: hidden;
 }
 .response-bg{
-    height: 260px;
-    background-position:center ;
+    height: 400px;
+    background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     transition: 0.4s ease-in-out;
+     width: 100%; 
 }
 .response a :hover .response-bg{
     transform: scale(1.04);
